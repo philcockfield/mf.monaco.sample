@@ -1,0 +1,22 @@
+{
+  "name": "host",
+  "version": "0.0.0",
+  "scripts": {
+    "bundle": "webpack --mode production",
+    "bundle:dev": "webpack --mode development",
+    "start": "webpack-dev-server --mode development",
+    "dev": "yarn start",
+    "build": "tsc $@",
+    "serve": "cd dist && serve -l 3001"
+  },
+  "dependencies": {
+    "@platform/libs": "0.2.2",
+    "react": "^16.13.0",
+    "react-dom": "^16.13.0"
+  },
+  "devDependencies": {
+    "preset.webpack": "^0.0.0"
+  },
+  "license": "MIT",
+  "private": true
+}

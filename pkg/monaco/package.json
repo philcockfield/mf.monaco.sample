@@ -1,0 +1,23 @@
+{
+  "name": "monaco",
+  "version": "0.0.0",
+  "scripts": {
+    "bundle": "webpack --mode production --progress",
+    "bundle:dev": "webpack --mode development --progress",
+    "start": "webpack-dev-server --mode development",
+    "dev": "yarn start",
+    "build": "tsc $@",
+    "serve": "cd dist && serve -l 3001"
+  },
+  "dependencies": {
+    "@platform/libs": "0.2.2",
+    "monaco-editor": "^0.21.2",
+    "react": "^16.13.0",
+    "react-dom": "^16.13.0"
+  },
+  "devDependencies": {
+    "preset.webpack": "^0.0.0"
+  },
+  "license": "MIT",
+  "private": true
+}
